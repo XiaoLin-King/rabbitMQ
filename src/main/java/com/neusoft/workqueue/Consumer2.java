@@ -12,8 +12,6 @@ public class Consumer2 {
         //通过连接获取通道
         final Channel channel = conn.createChannel();
         /* 通道绑定对应消息队列 */
-
-
         //每次只能消费一个消息
         channel.basicQos(1);
         /**

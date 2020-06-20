@@ -6,6 +6,7 @@ import com.rabbitmq.client.ConnectionFactory;
 
 public class RabbitMQUtil {
     private static ConnectionFactory connectionFactory;
+
     //工厂只创建一次
     static {
         //工厂是重量级资源
@@ -21,6 +22,7 @@ public class RabbitMQUtil {
         connectionFactory.setUsername("admin");
         connectionFactory.setPassword("123456");
     }
+
     //获取连接
     public static Connection getConnection() {
         try {
@@ -30,6 +32,7 @@ public class RabbitMQUtil {
         }
         return null;
     }
+
     //关闭通道 连接 的方法
     public static void closeConnAndChanel(Channel channel, Connection connection) {
         try {

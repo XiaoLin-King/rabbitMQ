@@ -15,6 +15,7 @@ public class Provider {
         System.out.println("Provider  获取到的连接对象" + conn);
         //通过连接获取通道
         Channel channel = conn.createChannel();
+
         //通道绑定对应消息队列
         /**
          * 参数一 queue:队列名称，如果队里不存在自动创建

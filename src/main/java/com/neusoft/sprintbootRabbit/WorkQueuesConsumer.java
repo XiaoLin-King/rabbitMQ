@@ -13,6 +13,7 @@ public class WorkQueuesConsumer {
         System.out.println("workQueues 1 工作模型的消息：" + message);
     }
 
+
     @RabbitListener(queuesToDeclare = @Queue(value = "work", durable = "true", autoDelete = "false"))
     public void receive2(String message) {
         System.out.println("workQueues 2 工作模型的消息：" + message);

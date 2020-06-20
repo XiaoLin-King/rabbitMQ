@@ -22,7 +22,6 @@ public class FanoutConsumer {
     }
 
 
-
     @RabbitListener(bindings = {
             @QueueBinding(
                     value = @Queue,   //不加名字表示临时队列

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TopicConsumer {
-
     @RabbitListener(bindings = {
             @QueueBinding(
                     value = @Queue,

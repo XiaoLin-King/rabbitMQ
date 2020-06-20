@@ -25,9 +25,9 @@ public class Provider {
             /**
              * 参数1 exchange：交换机名字  参数2 routingKey：路由key 参数3 props：消息持久化特性  参数4 message：消息
              */
-            channel.basicPublish("logs","",null,message.getBytes());
+            channel.basicPublish("logs", "", null, message.getBytes());
             //释放资源
-            RabbitMQUtil.closeConnAndChanel(channel,conn);
+            RabbitMQUtil.closeConnAndChanel(channel, conn);
         } catch (Exception e) {
             e.printStackTrace();
         }

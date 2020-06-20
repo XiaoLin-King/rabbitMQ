@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class RoutingConsumer {
-
     @RabbitListener(bindings = {
             @QueueBinding(
                     value = @Queue,//创建临时队列

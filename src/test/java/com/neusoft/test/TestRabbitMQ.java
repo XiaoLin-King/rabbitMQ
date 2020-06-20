@@ -14,7 +14,6 @@ public class TestRabbitMQ {
     //注入RabbitMQTemplate
     @Autowired
     private RabbitTemplate rabbitTemplate;
-
     //直连模型
     @Test
     public void directLink() {

@@ -3,7 +3,6 @@ package com.neusoft.workqueue;
 import com.neusoft.api.RabbitMQUtil;
 import com.rabbitmq.client.*;
 import lombok.SneakyThrows;
-
 import java.io.IOException;
 
 public class Consumer1 {
@@ -14,7 +13,6 @@ public class Consumer1 {
         //通过连接获取通道
         final Channel channel = conn.createChannel();
         //通道绑定对应消息队列
-
         //每次只能消费一个消息
         channel.basicQos(1);
         /**
