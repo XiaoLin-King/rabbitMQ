@@ -20,10 +20,7 @@ public class Consumer {
          */
         channel.queueDeclare("hello", false, false, false, null);
         //消费消息
-
         //定义队列的消费者
-//        DefaultConsumer consumer = new DefaultConsumer(channel);
-
         /**
          * 参数一：消费哪个队列的消息  队列名称
          * 参数二：开始消息的自动确认机制

@@ -21,7 +21,6 @@ public class RabbitMQUtil {
         connectionFactory.setUsername("admin");
         connectionFactory.setPassword("123456");
     }
-
     //获取连接
     public static Connection getConnection() {
         try {
@@ -31,7 +30,6 @@ public class RabbitMQUtil {
         }
         return null;
     }
-
     //关闭通道 连接 的方法
     public static void closeConnAndChanel(Channel channel, Connection connection) {
         try {
@@ -41,6 +39,4 @@ public class RabbitMQUtil {
             e.printStackTrace();
         }
     }
-
-
 }
