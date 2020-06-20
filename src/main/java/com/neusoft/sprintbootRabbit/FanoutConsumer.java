@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class FanoutConsumer {
+
     /**
      * 广播类型
      */

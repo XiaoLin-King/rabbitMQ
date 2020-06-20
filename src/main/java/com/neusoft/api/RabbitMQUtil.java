@@ -6,7 +6,6 @@ import com.rabbitmq.client.ConnectionFactory;
 
 public class RabbitMQUtil {
     private static ConnectionFactory connectionFactory;
-
     //工厂只创建一次
     static {
         //工厂是重量级资源

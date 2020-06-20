@@ -16,6 +16,7 @@ import com.rabbitmq.client.Connection;
  */
 
 public class Provider {
+
     public static void main(String[] args) {
         try {
             String exchangeName = "testTopics";

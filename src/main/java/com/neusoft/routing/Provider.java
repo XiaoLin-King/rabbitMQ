@@ -7,6 +7,7 @@ import com.rabbitmq.client.Connection;
 /**
  * 路由模型  针对不同的路由Key 不同订阅消费者进行消息消费
  */
+
 public class Provider {
     public static void main(String[] args) {
         System.out.println("生产者 进行生产消息");

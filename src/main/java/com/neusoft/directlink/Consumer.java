@@ -2,7 +2,6 @@ package com.neusoft.directlink;
 
 import com.neusoft.api.RabbitMQUtil;
 import com.rabbitmq.client.*;
-
 import java.io.IOException;
 
 public class Consumer {

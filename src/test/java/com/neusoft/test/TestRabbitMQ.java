@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes = RabbitmqApplication.class)
 @RunWith(SpringRunner.class)
 public class TestRabbitMQ {
+
     //注入RabbitMQTemplate
     @Autowired
     private RabbitTemplate rabbitTemplate;

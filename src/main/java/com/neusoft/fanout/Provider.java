@@ -7,6 +7,7 @@ import com.rabbitmq.client.Connection;
 /**
  * 广播形式发布消息
  */
+
 public class Provider {
     public static void main(String[] args) {
         System.out.println("生产者 启动");

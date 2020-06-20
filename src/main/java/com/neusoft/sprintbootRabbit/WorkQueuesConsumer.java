@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 //@RabbitListener  也可以放在方法上
 public class WorkQueuesConsumer {
+
     //会监听 队列中的信息
     @RabbitListener(queuesToDeclare = @Queue(value = "hallo", durable = "true", autoDelete = "false"))
     public void receive1(String message) {

@@ -6,6 +6,7 @@ import lombok.SneakyThrows;
 import java.io.IOException;
 
 public class Consumer1 {
+
     public static void main(String[] args) throws Exception {
         //获取连接对象
         Connection conn = RabbitMQUtil.getConnection();

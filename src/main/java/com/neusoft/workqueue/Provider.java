@@ -7,6 +7,7 @@ import com.rabbitmq.client.MessageProperties;
 import org.junit.Test;
 
 public class Provider {
+
     //生产消息
     @Test
     public void testSendMessage() throws Exception {

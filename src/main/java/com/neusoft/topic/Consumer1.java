@@ -5,6 +5,7 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 
 public class Consumer1 {
+
     public static void main(String[] args) {
         System.out.println("消费者1 启动");
         try {

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
  *  value 队列  durable 是否持久化  autoDelete 不是自动删除   非独占
  *
  */
+
 @Component
 @RabbitListener(queuesToDeclare = @Queue(value = "hello",durable = "false",autoDelete = "true"))
 public class DirectLinkConsumer {
